@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 /* BODY */
 
 body {
@@ -121,6 +125,41 @@ h2 {
   background-color: var(--clr-neutral-100);
   outline: 2px solid var(--clr-accent-300);
   transition: all 400ms ease-in-out;
+}
+
+/* HEADER & NAV */
+
+header {
+  background: var(--clr-primary-400);
+  padding: 0.5em 0;
+}
+
+.nav {
+  margin-left: 5rem;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.5em 0;
+}
+
+.nav__link {
+  color: var(--clr-neutral-100);
+  text-transform: uppercase;
+}
+
+.nav__btn {
+  background: var(--clr-neutral-100);
+  color: var(--clr-primary-400);
+  padding: 0.3em 0.5em;
+  margin-left: 1em;
+  border-radius: 24px;
 }
 
 /* HERO */
