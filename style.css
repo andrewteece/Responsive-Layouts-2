@@ -1,0 +1,140 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/* CSS CUSTOM PROPERTIES */
+
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+
+  --fs-base: 1.3125rem;
+  --fs-h2: 2.25rem;
+  --fs-h1: 3rem;
+
+  --fw-normal: 400;
+  --fw-bold: 900;
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-600: hsl(0, 0%, 23%);
+
+  --clr-primary-400: hsl(184, 71%, 26%);
+  --clr-primary-500: hsl(192, 36%, 21%);
+
+  --clr-accent-300: hsl(184, 68%, 54%);
+  --clr-accent-400: hsl(280, 22%, 49%);
+}
+
+/* CSS RESET */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BODY */
+
+body {
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--fs-h1);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+/* UTILITY */
+
+.wrapper {
+  width: 80%;
+  max-width: 68.75rem;
+  margin: 0 auto;
+  border: 2px solid yelllow;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  width: 100%;
+}
+
+.col + .col {
+  margin-left: 1.875rem;
+}
+
+.bg--accent {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
+.text--accent {
+  color: var(--clr-accent-400);
+}
+
+.text--align {
+  text-align: center;
+}
+
+.p--spacer {
+  padding: 3em 0;
+}
+
+/* HERO */
+
+.hero {
+  padding: 6.25rem 0;
+  background-color: var(--clr-primary-500);
+  color: var(--clr-neutral-100);
+}
+
+.hero--img {
+  width: 30%;
+  align-self: flex-start;
+}
+
+.hero--text {
+  width: 60%;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+/* COMPONENTS */
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--clr-neutral-600);
+  background-color: var(--clr-accent-300);
+  font-weight: var(--fw-bold);
+  padding: 0.75em 2em;
+  border-radius: 100px;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-neutral-100);
+  outline: 2px solid var(--clr-accent-300);
+  transition: all 400ms ease-in-out;
+}
