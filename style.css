@@ -86,6 +86,10 @@ h2 {
   color: var(--clr-neutral-100);
 }
 
+.section--subtitle {
+  color: var(--clr-primary-400);
+}
+
 .text--accent {
   color: var(--clr-accent-400);
 }
