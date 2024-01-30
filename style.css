@@ -135,7 +135,7 @@ header {
 }
 
 .nav {
-  margin-left: 5rem;
+  margin-left: 6rem;
 }
 
 .nav__list {
@@ -158,8 +158,15 @@ header {
   background: var(--clr-neutral-100);
   color: var(--clr-primary-400);
   padding: 0.3em 0.5em;
-  margin-left: 1em;
+  margin-left: 0.5em;
   border-radius: 24px;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.75;
+  border-bottom: 2px solid var(--clr-neutral-100);
+  transition: all 400ms ease-in-out;
 }
 
 /* HERO */
