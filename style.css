@@ -67,13 +67,12 @@ h2 {
 /* UTILITY */
 
 .wrapper {
-  width: 80%;
+  width: 90%;
   max-width: 68.75rem;
   margin: 0 auto;
-  border: 2px solid yelllow;
 }
 
-.row {
+/*.row {
   display: flex;
   justify-content: space-between;
 }
@@ -85,6 +84,7 @@ h2 {
 .col + .col {
   margin-left: 1.875rem;
 }
+*/
 
 .bg--accent {
   background-color: var(--clr-primary-400);
@@ -144,10 +144,14 @@ header {
 }
 
 .nav {
+  display: none;
+}
+
+/*.nav {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
-}
+} */
 
 .nav__list {
   margin: 0;
@@ -186,19 +190,20 @@ header {
 /* HERO */
 
 .hero {
-  padding: 6.25rem 0;
+  padding: 2em 0;
   background-color: var(--clr-primary-500);
   color: var(--clr-neutral-100);
 }
 
 .hero--img {
-  width: 35%;
   align-self: flex-start;
   border-radius: 18px;
+  margin-top: 2em;
 }
 
 .hero--text {
-  width: 60%;
+  /*width: 60%;*/
+  width: 90%;
 }
 
 .hero p {
@@ -211,13 +216,13 @@ header {
   margin-top: 3em;
 }
 .main--content {
-  width: 62%;
+  /*width: 62%;*/
 }
 
 /* SIDEBAR */
 
 .sidebar {
-  width: 35%;
-  padding: 2.5em 1em;
+  /*width: 35%;*/
+  padding: 2em 1.5em;
   text-align: center;
 }
