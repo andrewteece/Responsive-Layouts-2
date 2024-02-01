@@ -70,6 +70,7 @@ h2 {
   width: 90%;
   max-width: 68.75rem;
   margin: 0 auto;
+  position: relative;
 }
 
 /*.row {
@@ -144,7 +145,40 @@ header {
 }
 
 .nav {
-  display: none;
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.nav--toggle {
+  width: 3ren;
+  height: 3ren;
+  padding: 0em;
+  background: var(--clr-neutral-600);
+  color: var(--clr-neutral-100);
+  border: 0;
+  border-radius: 50%;
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.nav--toggle:focus,
+.nav--toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
 }
 
 /*.nav {
@@ -187,6 +221,28 @@ header {
   transition: all 400ms ease-in-out;
 }
 
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: var(--clr-neutral-100);
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
 /* HERO */
 
 .hero {
