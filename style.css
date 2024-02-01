@@ -136,30 +136,23 @@ h2 {
 
 header {
   background: var(--clr-primary-400);
-  padding: 0.5em 0;
+  padding: 1em 0;
+  text-align: center;
 }
 
 .logo {
-  display: flex;
-  margin-right: 1.5em;
+  /*display: flex;
+  margin-right: 1.5em;*/
+  height: 30px;
 }
 
 .nav {
   width: 100%;
-  visibility: hidden;
-  height: 0;
-  position: absolute;
-}
-
-.nav--visible {
-  visibility: visible;
-  height: auto;
-  position: relative;
 }
 
 .nav--toggle {
-  width: 3ren;
-  height: 3ren;
+  width: 3rem;
+  height: 3rem;
   padding: 0em;
   background: var(--clr-neutral-600);
   color: var(--clr-neutral-100);
@@ -178,6 +171,41 @@ header {
 
 .hamburger {
   width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: var(--clr-neutral-100);
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
   position: relative;
 }
 
@@ -221,28 +249,6 @@ header {
   transition: all 400ms ease-in-out;
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  display: block;
-  margin: 0 auto;
-  height: 3px;
-  background: var(--clr-neutral-100);
-}
-
-.hamburger::before,
-.hamburger::after {
-  content: '';
-  width: 100%;
-}
-
-.hamburger::before {
-  transform: translateY(-6px);
-}
-
-.hamburger::after {
-  transform: translateY(3px);
-}
 /* HERO */
 
 .hero {
@@ -281,4 +287,7 @@ header {
   /*width: 35%;*/
   padding: 2em 1.5em;
   text-align: center;
+}
+
+@media (min-width: 800px) {
 }
